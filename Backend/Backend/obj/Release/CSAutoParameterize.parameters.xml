@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="server=localhost;userid=root;password=password;database=quizdb;persistsecurityinfo=true" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\work\\poc\\angular\\quiz\\Backend\\Backend\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
