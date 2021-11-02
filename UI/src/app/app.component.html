@@ -1,0 +1,34 @@
+<app-header [title]="title"></app-header>
+
+<router-outlet></router-outlet>
+
+
+<!-- 
+<form (ngSubmit)="onSubmit()" #emailForm="ngForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Enter your city name</mat-label>
+    <input matInput placeholder="pat@example.com"  required>
+  </mat-form-field>
+  <input 
+    type="email"
+    pattern=".+@.+\..+"
+    required 
+    name="email" 
+    [(ngModel)]="email" 
+    #emailControl="ngModel"/>
+
+    <ng-container *ngIf="emailControl.invalid && emailControl.touched">
+      <div *ngIf="emailControl.errors?.required">
+        You must enter an email.
+      </div>
+      <div *ngIf="emailControl.errors?.pattern">
+        Please enter a valid email.
+      </div>
+    </ng-container>
+
+    <button  [disabled]="emailForm.invalid" >Submit</button>
+</form>
+<hr>
+<div> form validity : {{ emailForm.valid }}</div>
+<div> {{ emailForm.value | json }}</div>
+<div> {{ emailControl.value | json }} </div> -->

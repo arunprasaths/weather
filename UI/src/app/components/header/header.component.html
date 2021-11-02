@@ -1,0 +1,13 @@
+
+<mat-toolbar color="primary" class="navbar"> 
+    <div>      <button mat-button routerLink="/">{{ title }}</button>
+      </div>
+    
+    
+    <div>
+      <button mat-button *ngIf="isUserAuthenticated$ | async">Welcome {{name}}</button>
+      <button mat-button *ngIf="isUserAuthenticated$ | async" (click)="logout()">Logout</button>
+      <button mat-button *ngIf="!(isUserAuthenticated$ | async)"  routerLink="/register">Register</button>
+      <button mat-button *ngIf="!(isUserAuthenticated$ | async)" routerLink="/login">Login</button>
+    </div>
+  </mat-toolbar>

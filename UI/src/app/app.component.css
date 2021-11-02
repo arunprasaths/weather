@@ -1,0 +1,17 @@
+.form-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+  .weather-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .control-80-width {
+    width: 80%;
+  }
+
+  .mat-input-underline {
+    background-color: #fff;    /* replace this color with your accent color hex code */
+}
